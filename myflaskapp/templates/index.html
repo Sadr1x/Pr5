@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Головна{% endblock %}
+{% block content %}
+<h1>Головна сторінка Flask</h1>
+<p>Вітаю! Цей додаток демонструє маршрути Flask, HTML-шаблони та JSON API.</p>
+<ul>
+  <li><a href="{{ url_for('about') }}">Про додаток</a></li>
+  <li><a href="{{ url_for('api.info') }}">Відкрити інформацію у форматі JSON</a></li>
+  <li><a href="{{ url_for('greet', name='Ілля') }}">Перевірити привітання з іменем</a></li>
+</ul>
+{% endblock %}

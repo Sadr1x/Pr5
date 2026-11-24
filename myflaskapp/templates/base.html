@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{% endblock %} | Flask</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header><nav aria-label="Основна навігація">
+    <strong>Flask</strong>
+    <a href="{{ url_for('index') }}">Головна</a>
+    <a href="{{ url_for('about') }}">Про додаток</a>
+    <a href="{{ url_for('api.info') }}">JSON API</a>
+  </nav></header>
+  <main>{% block content %}{% endblock %}</main>
+</body>
+</html>

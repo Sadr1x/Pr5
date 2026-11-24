@@ -1,0 +1,11 @@
+{% extends 'pages/base.html' %}
+{% block title %}Головна{% endblock %}
+{% block content %}
+<h1>Головна сторінка Django</h1>
+<p>Цей проєкт демонструє, як додаток pages обробляє запити та відображає сторінки.</p>
+<ul>
+  <li><a href="{% url 'pages:about' %}">Дізнатися про практичну роботу</a></li>
+  <li><a href="{% url 'pages:contact' %}">Відкрити контактну сторінку</a></li>
+  <li><a href="{% url 'pages:contact' %}?name=Ілля">Перевірити персональне привітання</a></li>
+</ul>
+{% endblock %}

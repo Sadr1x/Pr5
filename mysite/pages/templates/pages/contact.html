@@ -1,0 +1,15 @@
+{% extends 'pages/base.html' %}
+{% block title %}Контакт{% endblock %}
+{% block content %}
+<h1>Контактна сторінка</h1>
+{% if name %}
+<p>Вітаю, {{ name }}!</p>
+{% else %}
+<p>Вітаю! Введіть ім’я, щоб отримати персональне привітання.</p>
+{% endif %}
+<form method="get">
+  <label for="name">Ваше ім’я</label>
+  <input id="name" name="name" value="{{ name }}">
+  <button>Привітатися</button>
+</form>
+{% endblock %}

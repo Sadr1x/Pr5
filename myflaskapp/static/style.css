@@ -1,0 +1,18 @@
+:root {
+  font: 17px/1.6 system-ui, sans-serif;
+  color: #172940;
+  background: #edf3fa;
+}
+body { margin: 0; }
+nav, main { max-width: 840px; margin: auto; padding: 16px 24px; }
+header { background: #233e66; color: white; }
+nav { display: flex; align-items: center; flex-wrap: wrap; gap: 1.3rem; }
+nav a { color: #e5eef9; }
+main { padding-block: 54px; }
+h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.12; margin: 0 0 24px; }
+a { color: #264b82; }
+li { margin-block: 8px; }
+dt { font-weight: bold; }
+dd { margin: 0 0 12px; }
+input, button { font: inherit; padding: 6px 10px; }
+button { background: #233e66; color: white; border: 1px solid #233e66; }

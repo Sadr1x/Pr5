@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Привітання{% endblock %}
+{% block content %}
+<h1>Вітаю, {{ name }}!</h1>
+<form action="{{ url_for('greet') }}" method="get">
+  <label for="name">Ваше ім’я</label>
+  <input id="name" name="name">
+  <button>Привітатися</button>
+</form>
+{% endblock %}
